@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+:root {
+    --box-shadow: 0 8px 22px rgba(0, 0, 0, 0.18);
+    --text-shadow: -3px 1px 6px rgba(0, 0, 0, 0.33);
+
+
+}
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: gainsboro;
+    scroll-behavior: smooth;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.navbar {
+    box-shadow: var(--box-shadow);
+}
+
+#btn1 {
+    border: 2px solid blue;
+    font-size: 18px;
+    font-weight: 500;
+    color: blue;
+    border-radius: 15px 0 10px 15px;
+}
+
+#btn1:hover {
+    background-color: blue;
+    color: white;
+    transition: .3s all ease;
+}
+
+.navbar .nav-item .nav-link {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.navbar .nav-item .nav-link:hover {
+    color: blue;
+    transition: .5s all ease;
+}
+
+#hero {
+    background-image: url(./images/bg1.jpg);
+    width: 100%;
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 2;
+}
+
+#hero::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(22, 21, 77, 0.596);
+    z-index: -1;
+}
+
+.main-text h2 {
+    font-size: 50px;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 1;
+}
+
+.main-text h3 {
+    font-size: 50px;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 1;
+    color: blue;
+}
+
+.main-text p {
+    font-size: 16px;
+    color: white;
+    font-weight: 400;
+    letter-spacing: 1;
+    color: white;
+}
+
+#brands-bg {
+    height: 30vh;
+    background-color: azure;
+}
+
+.header h2 {
+    font-size: 40px;
+    font-weight: 600;
+    color: blue;
+}
+
+#brands img {
+    width: 120px;
+}
+
+.card {
+    box-shadow: var(--box-shadow);
+    border-radius: 10px;
+}
+
+.icon-b {
+    padding: 10px;
+    background: blue;
+    border-radius: 50%;
+    color: white;
+}
+
+#card-effect h2 {
+    font-size: 20px;
+    font-weight: 550;
+    color: blue;
+}
+
+#card-effect p {
+    font-size: 15px;
+}
+
+.pic img {
+    width: 400px;
+    border-radius: 15px 0 15px 10px;
+}
+
+#btn2 {
+    background-color: blue;
+    color: white;
+    border-radius: 10px 0 5px 10px;
+}
+
+#btn3 {
+    color: white;
+    background: transparent;
+    border-radius: 10px 0 5px 10px;
+    border: 2px solid white;
+    font-size: 18px;
+    font-weight: 550;
+
+}
+
+#btn3:hover {
+    background-color: blue;
+    color: white;
+    transition: .5s all ease;
+    border: none;
+}
+
+#serve {
+    box-shadow: var(--box-shadow);
+}
+
+#serve h2 {
+    color: blue;
+    font-size: 25px;
+    font-weight: 550;
+}
+
+#serve p {
+    font-weight: 100;
+    font-size: 16px;
+    text-align: justify;
+}
+
+#sub-about h2 {
+    color: blue;
+    font-size: 25px;
+    font-weight: 550px;
+}
+
+#sub-about p {
+    font-weight: 100;
+    font-size: 16px;
+    text-align: justify;
+}
+
+#award {
+    background-color: white;
+    height: 30vh;
+    color: blue;
+}
+
+#award h2 {
+    font-size: 30px;
+    font-weight: 550;
+}
+
+#award p {
+    font-size: 16px;
+    font-weight: 100;
+}
+
+
+#work {
+    margin-top: 150px;
+}
+
+form input.form-control {
+    height: 56px;
+}
+
+form .form-control {
+    border: transparent;
+    border-radius: 0;
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
+#cont h2 {
+    color: blue;
+    font-size: 40px;
+}
+
+@media(max-width:768px) {
+    .main-text h2 {
+        font-size: 40px;
+        font-weight: 600;
+    }
+
+    .main-text h3 {
+        font-size: 40px;
+        font-weight: 600;
+    }
+
+    .main-text p {
+        font-size: 14px;
+    }
+
+    #card-effect h2 {
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+    #card-effect p {
+        font-size: 13px;
+        text-align: justify;
+    }
+
+    #serve h2 {
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    #serve p {
+        font-size: 14px;
+    }
+
+    #sub-about h2 {
+        color: blue;
+        font-size: 20px;
+        font-weight: 500px;
+    }
+
+    #sub-about p {
+        font-size: 14px;
+    }
+
+    #award h2 {
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    #award p {
+        font-size: 14px;
+    }
+    .header h2 {
+        font-size: 30px;
+        font-weight: 600;
+    }
+    
+    
+
+}
+
+@media(max-width:425px) {
+    .main-text h2 {
+        font-size: 30px;
+        font-weight: 500;
+    }
+
+    .main-text h3 {
+        font-size: 30px;
+        font-weight: 500;
+    }
+
+    .main-text p {
+        font-size: 13px;
+    }
+
+    #brands-bg {
+        height: 40vh;
+    }
+
+    #brands img {
+        width: 70px;
+    }
+    .header h2 {
+        font-size: 25px;
+        font-weight: 500;
+    }
+    
+
+}
+@media(max-width:375px) {
+    .main-text h2 {
+        font-size: 25px;
+    }
+
+    .main-text h3 {
+        font-size: 25px;
+    }
+
+    .main-text p {
+        font-size: 12px;
+    }
+    .header h2 {
+        font-size: 20px;
+    }
+
+
+
+
+}
